@@ -22,5 +22,5 @@ from UrbanDjango.task2.views import func_templates, ClassTemplates
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('func/', func_templates),
-    path('class/', ClassTemplates.as_view())
+    path('class/', ClassTemplates.as_view())#
 ]
