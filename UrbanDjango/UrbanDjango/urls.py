@@ -18,19 +18,15 @@ from tempfile import template
 
 from django.contrib import admin
 from django.urls import path
-from django.views.generic import TemplateView
+# from django.views.generic import TemplateView
 # from task2.views import func_templates, ClassTemplates
-from task3.views import *
-
-#from UrbanDjango.task3.views import games
-
-#from task3.views import game_platform
+from task4.views import platform, games, cart
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('func/', func_templates),
     # path('class/', ClassTemplates.as_view()),
-    path('platform/', game_platform),
-    path('platform/games/', game),
-    path('platform/cart/', cart)
+    path('platform/', platform),
+    path('platform/games/', games),
+    path('platform/cart/', cart),
 ]
